@@ -9,7 +9,7 @@ public class GameRunner {
 	}
 
 	public void run() {
-		System.out.println("Running Game: " + game);
+		System.out.println("Running Game: " + game.getClass());
 		game.Up();
 		game.Down();
 		game.Left();
