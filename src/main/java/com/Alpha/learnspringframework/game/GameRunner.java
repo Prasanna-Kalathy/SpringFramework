@@ -2,9 +2,9 @@ package com.Alpha.learnspringframework.game;
 
 public class GameRunner {
 //	MarioGame game;
-	SuperContra game;
+	 GamingConsole game;
 //Creating the parameterized constructor 
-	public GameRunner(SuperContra game) {
+	public GameRunner(GamingConsole game) {
 		this.game = game;
 	}
 

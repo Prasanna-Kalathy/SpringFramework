@@ -8,11 +8,11 @@ public class AppGamingBasicJava {
 
 	public static void main(String[] args) {
 //Using var instead of explicitly mentioning the Object type		
-		var marioGame = new MarioGame();
+//		var game = new MarioGame();
 //		MarioGame marioGame = new MarioGame();
-		var superContra = new SuperContra();
+		var game = new SuperContra();
 //		var gameRunner = new GameRunner(marioGame);
-		var gameRunner = new GameRunner(superContra);
+		var gameRunner = new GameRunner(game);
 //		GameRunner gameRunner = new GameRunner(marioGame);
 		gameRunner.run();
 	}

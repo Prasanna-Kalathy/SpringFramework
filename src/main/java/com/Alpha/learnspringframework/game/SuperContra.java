@@ -1,6 +1,6 @@
 package com.Alpha.learnspringframework.game;
 
-public class SuperContra {
+public class SuperContra implements GamingConsole{
 	public void Up() {
 		System.out.println("Climb");
 	}
