@@ -22,8 +22,8 @@ public class SFConfig {
 	};
 
 	@Bean
-	public Person data() {
-		Person person_data = new Person(name(), age(), ad_data());
+	public Person data(String name, int age, Address ad_data) {
+		Person person_data = new Person(name, age, ad_data);
 		return person_data;
 	}
 
