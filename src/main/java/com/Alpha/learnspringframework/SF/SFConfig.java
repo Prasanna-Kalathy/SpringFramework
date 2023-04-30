@@ -30,7 +30,7 @@ public class SFConfig {
 	record Address(String Add_Line_1, String City) {
 	};
 	
-	@Bean
+	@Bean (name="My_Ad_Data")
 	public Address ad_data() {
 		Address person_ad_data = new Address("Leaf Village", "Konaha");
 		return person_ad_data;

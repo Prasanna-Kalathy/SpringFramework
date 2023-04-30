@@ -16,7 +16,7 @@ public class App02 {
 		System.out.println(context.getBean("name"));
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("data"));
-		System.out.println(context.getBean("ad_data"));
+		System.out.println(context.getBean("My_Ad_Data"));
 		
 	}
 
