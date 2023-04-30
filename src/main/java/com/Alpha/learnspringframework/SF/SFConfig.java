@@ -35,5 +35,6 @@ public class SFConfig {
 		Address person_ad_data = new Address("Leaf Village", "Konaha");
 		return person_ad_data;
 	}
+
 	
 }

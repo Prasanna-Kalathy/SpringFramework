@@ -1,5 +1,7 @@
 package com.Alpha.learnspringframework.SF;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.Alpha.learnspringframework.SF.SFConfig.Address;
@@ -20,6 +22,9 @@ public class App02 {
 		System.out.println(context.getBean("data"));
 		System.out.println(context.getBean("My_Ad_Data"));
 		System.out.println(context.getBean(Address.class));
+		
+		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+		System.out.println(context.getBeanDefinitionCount());
 		
 	}
 
