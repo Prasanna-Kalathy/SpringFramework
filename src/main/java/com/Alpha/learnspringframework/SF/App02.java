@@ -2,6 +2,8 @@ package com.Alpha.learnspringframework.SF;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.Alpha.learnspringframework.SF.SFConfig.Address;
+
 public class App02 {
 
 	public static void main(String[] args) {
@@ -17,6 +19,7 @@ public class App02 {
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("data"));
 		System.out.println(context.getBean("My_Ad_Data"));
+		System.out.println(context.getBean(Address.class));
 		
 	}
 
