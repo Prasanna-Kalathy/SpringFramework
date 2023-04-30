@@ -19,15 +19,15 @@ public class App01 {
 		int UI = In.nextInt();
 		GamingConsole game;
 		if (UI == 1) {
-			game = new MarioGame();	//1. Object Creation
+			game = new MarioGame(); // 1. Object Creation
 		} else if (UI == 2) {
 			game = new SuperContra();
 		} else {
 			game = new PACMAN();
 		}
-		var gameRunner = new GameRunner(game); 
-		//2. Object creation and wiring dependency
-		//game is a dependency of the GameRunner class
+		var gameRunner = new GameRunner(game);
+		// 2. Object creation and wiring dependency
+		// game is a dependency of the GameRunner class
 		gameRunner.run();
 	}
 
