@@ -10,4 +10,29 @@ public class SFConfig {
 	public String name() {
 		return "Prasanna";
 	}
+
+	@Bean
+	public int age() {
+		return 15;
+	}
+
+	// record is a new feature that replaces - getters,setters,hashcode,tostring
+	// methods and separate class for
+	record Person(String name, int age) {
+	};
+
+	@Bean
+	public Person data() {
+		Person person_date = new Person("Naruto", 16);
+		return person_date;
+	}
+
+	record Address(String Add_Line_1, String City) {
+	};
+	
+	@Bean
+	public Address ad_data() {
+		Address person_ad_data = new Address("Leaf Village", "Konaha");
+		return person_ad_data;
+	}
 }

@@ -14,7 +14,10 @@ public class App02 {
 		// use context to get the beans(object) from configuration file
 
 		System.out.println(context.getBean("name"));
-
+		System.out.println(context.getBean("age"));
+		System.out.println(context.getBean("data"));
+		System.out.println(context.getBean("ad_data"));
+		
 	}
 
 }
