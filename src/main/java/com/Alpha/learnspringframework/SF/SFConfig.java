@@ -18,13 +18,13 @@ public class SFConfig {
 
 	// record is a new feature that replaces - getters,setters,hashcode,tostring
 	// methods and separate class for
-	record Person(String name, int age) {
+	record Person(String name, int age, Address ad_data) {
 	};
 
 	@Bean
 	public Person data() {
-		Person person_date = new Person("Naruto", 16);
-		return person_date;
+		Person person_data = new Person(name(), age(), ad_data());
+		return person_data;
 	}
 
 	record Address(String Add_Line_1, String City) {
