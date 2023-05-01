@@ -32,21 +32,21 @@ public class SFConfig {
 	record Address(String Add_Line_1, String City) {
 	};
 	
-	@Bean (name="My_Ad_Data")
+	@Bean 
 	public Address ad_data() {
 		Address person_ad_data = new Address("Leaf Village", "Konahagakure");
 		return person_ad_data;
 	}
 	
-	@Bean (name="My_Ad_Data1")
+	@Bean 
 	@Primary
 	public Address ad_data1() {
 		Address person_ad_data = new Address("Mist Village", "Kirigakure");
 		return person_ad_data;
 	}
 	
-	@Bean (name="My_Ad_Data2")
-//	@Qualifier
+	@Bean(name = "sandVillageAddress")
+	@Qualifier("sandVillage")
 	public Address ad_data2() {
 		Address person_ad_data = new Address("Sand Village", "Sunagakure");
 		return person_ad_data;

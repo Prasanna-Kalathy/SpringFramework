@@ -20,8 +20,10 @@ public class App02 {
 		System.out.println(context.getBean("name"));
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("data"));
-		System.out.println(context.getBean("My_Ad_Data"));
+		System.out.println(context.getBean("ad_data"));
 		System.out.println(context.getBean(Address.class));
+		System.out.println(context.getBean("sandVillageAddress", Address.class));
+
 		
 		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 		System.out.println(context.getBeanDefinitionCount());
