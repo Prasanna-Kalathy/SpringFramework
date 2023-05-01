@@ -1,7 +1,9 @@
 package com.Alpha.learnspringframework.SF;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class SFConfig {
@@ -32,9 +34,23 @@ public class SFConfig {
 	
 	@Bean (name="My_Ad_Data")
 	public Address ad_data() {
-		Address person_ad_data = new Address("Leaf Village", "Konaha");
+		Address person_ad_data = new Address("Leaf Village", "Konahagakure");
 		return person_ad_data;
 	}
-
+	
+	@Bean (name="My_Ad_Data1")
+	@Primary
+	public Address ad_data1() {
+		Address person_ad_data = new Address("Mist Village", "Kirigakure");
+		return person_ad_data;
+	}
+	
+	@Bean (name="My_Ad_Data2")
+//	@Qualifier
+	public Address ad_data2() {
+		Address person_ad_data = new Address("Sand Village", "Sunagakure");
+		return person_ad_data;
+	}
+	
 	
 }
