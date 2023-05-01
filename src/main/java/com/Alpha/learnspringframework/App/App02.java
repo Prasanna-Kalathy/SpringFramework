@@ -1,10 +1,10 @@
-package com.Alpha.learnspringframework.SF;
+package com.Alpha.learnspringframework.App;
 
 import java.util.Arrays;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.Alpha.learnspringframework.SF.SFConfig.Address;
+import com.Alpha.learnspringframework.App.SFConfig.Address;
 
 public class App02 {
 
